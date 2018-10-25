@@ -9,4 +9,17 @@ class LinkController extends Controller
     public function contact(){
         return view('contact');
     }
+    public function services()
+    {
+        return view('services');
+    }
+    public function accueil()
+    {
+        return view('accueil');
+    }
+    public function about()
+    {
+        return view('about');
+    }
+
 }

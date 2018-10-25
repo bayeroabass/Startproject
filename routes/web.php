@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[
+    'as'=>'accueil',
+    'uses'=>'LinkController@accueil'
+]);
+Route::get('/about',[
+    'as'=>'about',
+    'uses'=>'LinkController@about'
+]);
+
 Route::get('/contact',[
     'as'=>'contact',
     'uses'=>'LinkController@contact'
+]);
+Route::get('/services',[
+    'as'=>'services',
+    'uses'=>'Linkcontroller@services'
 ]);

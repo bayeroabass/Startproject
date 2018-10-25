@@ -1,5 +1,7 @@
 @extends('header')
 
+@section('title','Contact')
+
 @section('content')
 
     <!-- ***** Breadcumb Area Start ***** -->

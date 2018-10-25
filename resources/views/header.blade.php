@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>N-technology- Creative Business Template | Contact</title>
+    <title>N-technology - @yield('title')</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -25,7 +25,7 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/animatesss.css" rel="stylesheet">
-
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,24 +43,24 @@
                     <div class="menu_area h-100">
                         <nav class="navbar h-100 navbar-expand-lg align-items-center">
                             <!-- Logo -->
-                            <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="logo"></a>
+                            <a class="navbar-brand" href="{{ route('accueil') }}"><img src="img/core-img/logo.png" alt="logo"></a>
 
                             <!-- Menu Area -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
                             <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
                                 <ul class="navbar-nav animated" id="nav">
-                                    <li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="services.html">Nos Services</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">A Propos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Nos Services</a></li>
                                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                     <li class="nav-item"><a class="nav-link" href={{ Route('contact') }}>Contact</a></li>
                                 </ul>
                                 <!-- Search Form Area Start -->
-                                
+
                                 <!-- Search btn -->
-                                
+
                                 <!-- Login/Register btn -->
 
                             </div>
@@ -90,9 +90,9 @@
                         <div class="single-footer-widget mb-100">
                             <h5>Liens Utiles</h5>
                             <ul>
-                                <li><a href="#">Accueil</a></li>
-                                <li><a href="#">A Propos</a></li>
-                                <li><a href="#">Nos Services</a></li>
+                                <li><a href="{{ route('accueil') }}">Accueil</a></li>
+                                <li><a href="{{ route('about') }}">A Propos</a></li>
+                                <li><a href="{{ route('services') }}">Nos Services</a></li>
                                 <li><a href="#">Portfolio</a></li>
                                 <li><a href="{{ Route('contact') }}">Nous Contacter</a></li>
                             </ul>
