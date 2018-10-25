@@ -53,8 +53,7 @@
                                     <li class="nav-item active"><a class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">A Propos</a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Nos Services</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href={{ Route('contact') }}>Contact</a></li>
                                 </ul>
                                 <!-- Search Form Area Start -->
@@ -93,7 +92,7 @@
                                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                                 <li><a href="{{ route('about') }}">A Propos</a></li>
                                 <li><a href="{{ route('services') }}">Nos Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
                                 <li><a href="{{ Route('contact') }}">Nous Contacter</a></li>
                             </ul>
                         </div>

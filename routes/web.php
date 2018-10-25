@@ -20,6 +20,12 @@ Route::get('/about',[
     'uses'=>'LinkController@about'
 ]);
 
+Route::get('/portfolio', [
+    'as' => 'portfolio',
+    'uses' => 'LinkController@portfolio'
+]);
+
+
 Route::get('/contact',[
     'as'=>'contact',
     'uses'=>'LinkController@contact'
