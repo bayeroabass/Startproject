@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>N-technology - @yield('title')</title>
+    <title>N-technology | @yield('title')</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -19,13 +19,8 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/omnes-pro.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/animatesss.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -151,6 +146,7 @@
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
+    @include('flashy::message')
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>

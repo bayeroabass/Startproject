@@ -12,11 +12,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
-@import 'css/bootstrap.min.css';
-@import 'css/owl.carousel.min.css';
-@import 'css/animate.css';
-@import 'css/magnific-popup.css';
-@import 'css/font-awesome.min.css';
+@import 'bootstrap.min.css';
+@import 'owl.carousel.min.css';
+@import 'animate.css';
+@import 'magnific-popup.css';
+@import 'font-awesome.min.css';
+@import 'fontawesome.min.css';
+@import 'responsive.css';
 
 /* --------------------------
 :: 1.0 Base CSS Start
@@ -186,7 +188,8 @@ img {
 }
 
 .mb-100 {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    margin-top: 100px;
 }
 
 .ml-15 {
@@ -338,7 +341,7 @@ img {
 
 .bg-overlay:after,
 .bg-overlay-white:after {
-    background-color: rgba(33, 27, 49, 0.88);
+    background-color: rgba(59, 59, 61, 0.493);
     width: 100%;
     height: 100%;
     top: 0;
@@ -348,9 +351,9 @@ img {
     position: absolute;
 }
 
-.bg-overlay-white:after {
+/*.bg-overlay-white:after {
     background-color: rgba(231, 235, 246, 0.89);
-}
+}*/
 
 .bg-img {
     background-position: center center;
@@ -493,8 +496,8 @@ img {
 }
 
 .hero-slide-content h2 {
-    font-size: 30px;
-    color:#e6e7f4;
+    font-size: 60px;
+    color: #fff;
     line-height: 1.8;
 }
 
@@ -507,15 +510,14 @@ img {
 .hero-slide-content .slide-img {
     color: #fff;
     margin-top: 100px;
-    font-weight: 300;
-    
+    font-weight: 400;
 }
 
 .hero-slides .owl-prev,
 .hero-slides .owl-next {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     background-color: transparent;
     line-height: 60px;
     text-align: center;
@@ -720,7 +722,6 @@ img {
 .single_gallery_item {
     width: 25%;
     display: inline-block;
-    float: left;
     z-index: 3;
     position: relative;
     overflow: hidden
@@ -958,8 +959,6 @@ span.accor-open {
 .copyright-text > p {
     margin-bottom: 0;
     font-size: 13px;
-    text-align: center;
-    padding-right: 50px;
 }
 
 .footer-social-info > a {
@@ -1056,10 +1055,23 @@ span.accor-open {
 .few-words-contents,
 .few-words-thumb {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    height: 770px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+    text-rendering: optimizelegibility;
+
+}
+.few-words-thumb >p{
+        color: #fff !important;
+        font-weight: 300 !important;
+        font-size: 1.57143rem !important;
+        text-transform: uppercase !important;
+        margin-top: 9.0rem !important;
+        text-align: center !important;
+        font-family: "Open Sans", Helvetica, Arial,sans-serif;
+        line-height: 3.6;
 }
 
 .few-words-contents {
@@ -1476,7 +1488,7 @@ span.accor-open {
 }
 
 .skills-text > p {
-    padding-right: 30px;
+    padding-right: 60px;
 }
 
 .skills-text > p:last-child {
@@ -1621,6 +1633,11 @@ span.accor-open {
     margin-right: 20px;
 }
 
+.instagram-feeds ul > li {
+    width: calc(33.3333333% - 8px);
+    margin: 4px;
+    display: inline-block;
+}
 
 /* ----------------------
 :: 19.0 Contact Page CSS
@@ -1676,9 +1693,14 @@ span.accor-open {
 :: 20.0 Elements Area CSS
 ----------------------- */
 
-.elements-title h2 {
+.elements-title  h2 {
     margin-bottom: 60px;
     font-size: 24px;
+    text-align: center;
+    margin-top: 60px;
+     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
 }
 
 .mosh-btn.mosh-btn-2 {
@@ -1721,26 +1743,8 @@ span.accor-open {
 .mosh-cool-facts-area .cool-facts-content > p {
     color: #292d4f;
 }
+/*debut photos */
 
-
-
-/*------debut photo contact
-*/
-
-.section1 {
-    position: relative;
-}
-.bg-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 .bg-img .overlay {
     position: absolute;
@@ -1751,55 +1755,137 @@ span.accor-open {
     opacity: .8;
     background: #1C1D21;
 }
-.number {
+
+.nombre {
     text-align: center;
     margin: 15px 0px;
+
 }
 
-.number i {
+.nombre i {
     color: #6195FF;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.number h3 {
+.nombre h3 {
     font-size: 36px;
     margin-bottom: 10px;
 }
+
 .white-text {
     color: #FFF;
 }
 
 
-/*------fin photo contact
-*/
-/*About----------------*/
-.section2 {
-    position: relative;
-}
-.bg-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    background-attachment:fixed;
-}
+/*------fin photo contact=======*/
+.line{
+    height: 3px;
+    width: 100px !important;
+    background-color: rgba(77, 77, 216, 0.918) !important;
+    margin-left: 600px;
+    margin-top: -50px;
 
-.bg-img .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    opacity: .8;
-    background: #1C1D21;
 }
+::selection{
+    background-color: #548dd3;
+}
+/*=============about=========*/
+.competence > p{
+color: #6f7481;
+margin-top: 0;
+display: block;
 
-/*-------Fin About---------*/
+}
+.competence{
+    margin-bottom: 3rem !important;
+    display: block;
+    padding-top: 1.58rem;
+    padding-left: 90px;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.lead {
+    font-size: 0.99rem;
+    font-weight: 300;
+    text-align: center !important;
+    color: #676b77;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7px;
+}
+.inline{
+    height: 3px;
+    width: 100px !important;
+    background-color: rgba(77, 77, 216, 0.918) !important;
+}
+.equipe{
+    height: 3px;
+    width: 100px !important;
+    background-color: rgba(77, 77, 216, 0.918) !important;
+    margin-left: 25em !important;
+}
+.folder{
+    margin-bottom: 0.35714rem !important;
+    color: #407ece !important;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+}
+.feature-content > h5 {
+    color:rgba(34, 34, 34, 0.829);
+    line-height: 1.4;
+    text-transform: uppercase !important;
+    margin-bottom: 1rem !important;
+    font-size: 1.0rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+   font-family: initial;
+}
+.feature-content > p{
+     color: rgb(107, 107, 107) !important;
+     margin-top: 0;
+     margin-bottom: 1rem;
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     box-sizing: border-box;
+     font-family: inherit;
+}
+.apropos{
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+        position: relative;
+}
+.image{
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        width: 100% !important;
+        box-sizing: border-box;
+}
+.n-tec>h3{
+     font-size: 24px;
+     text-align: center;
+     font-family: "Open Sans", Helvetica,Arial,sans-serif;
+     font-weight: 500;
+     padding-top: -10px;
+}
+.membre>h5{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center !important;
+    color: #676b75;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-top: 15px;
+}
 
 /* --------------------------------
 ============= The End =============

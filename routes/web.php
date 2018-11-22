@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +32,16 @@ Route::get('/contact',[
     'as'=>'contact',
     'uses'=>'LinkController@contact'
 ]);
+Route::post('/contact', [
+    'as' => 'contact',
+    'uses' => 'LinkController@store'
+]);
 Route::get('/services',[
     'as'=>'services',
     'uses'=>'Linkcontroller@services'
 ]);
+
+Route::get('/test-email', function(){
+    return new ContactMessageCreated('bayero abass barry','bayeroabassb@yahoo.com','projet web et application mobile','bonjour message de test!!!!!!');
+}
+);
