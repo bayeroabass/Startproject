@@ -45,3 +45,8 @@ Route::get('/test-email', function(){
     return new ContactMessageCreated('bayero abass barry','bayeroabassb@yahoo.com','projet web et application mobile','bonjour message de test!!!!!!');
 }
 );
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

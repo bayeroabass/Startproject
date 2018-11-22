@@ -151,6 +151,7 @@ return [
          * Package Service Providers...
          */
         MercurySeries\Flashy\FlashyServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
         /*
          * Application Service Providers...
          */
