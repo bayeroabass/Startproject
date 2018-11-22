@@ -14,6 +14,7 @@ class LinkController extends Controller
         return view('contact');
     }
     public function store(contactRequest $request){
+
         $message= new Message;
         $message->name= $request->name;
         $message->email= $request->email;
