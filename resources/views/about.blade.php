@@ -1,5 +1,4 @@
-@extends('header')
-@section('title','A propos')
+@extends('header', ['title'=>'About'])
     @section('content')
 		<!-- ***** Breadcumb Area Start ***** -->
     <div class="mosh-breadcumb-area" style="background-image: url(img/core-img/breadcumb.png);">
@@ -52,7 +51,7 @@
                 <div class="col-12 col-md-12">
                     <div class="mosh-about-us-content">
                         <div class="section-heading">
-                        
+
                         </div>
                         <div class="row devise">
                             <!-- Single Feature Area -->
@@ -101,10 +100,10 @@
         <div class="col-12">
             <div class="elements-title">
                 <h2>CERTAINES DE NOS COMPETENCES</h2>
-                <div class="line center"></div>    
+                <div class="line center"></div>
                 <p class="lead mb-0">Nous travaillons avec beacoup de technologies, voici les principales</p>
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col-6">
@@ -121,7 +120,7 @@
                             </div>
                         </div>
              </div>
-               
+
             <div class="col-6">
                 <!-- Loaders Area Start -->
                 <div class="our-skills-area text-center mb-100">
@@ -130,21 +129,21 @@
                             <div class="single-pie-bar m-bottom-50" data-percent="90">
                                 <canvas class="bar-circle" width="70" height="70"></canvas>
                                 <h6>WEB APP</h6>
-                            
+
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-2">
                             <div class="single-pie-bar m-bottom-50" data-percent="83">
                                 <canvas class="bar-circle" width="70" height="70"></canvas>
                                 <h6>MOBILE</h6>
-                                
+
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-2">
                             <div class="single-pie-bar m-bottom-50" data-percent="25">
                                 <canvas class="bar-circle" width="70" height="70"></canvas>
                                 <h6>softawre</h6>
-                                
+
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-2">
@@ -164,7 +163,7 @@
         <div class="few-words-thumb bg-img wow fadeInRightBig" data-wow-delay="1.1s" style="background-image: url(img/bg-img/macbook.jpg);">
             <p >Nous réalisons la partie technique de vos projets</p>
         </div>
-        
+
     </section>
     <!-- ***** Few Words Area End ***** -->
 
@@ -224,7 +223,7 @@
                                 <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        
+
                         <!-- Single Team Slide -->
                         <div class="single-team-slide text-center">
                             <!-- Thumbnail -->
@@ -275,7 +274,7 @@
     <section class="mosh-subscribe-newsletter-area bg-img bg-overlay-white section_padding_100" style="background-image: url(img/bg-img/office.jpg);">
         <div class="container">
           <div class="row">
-   
+
                 <div class="col-sm-3 col-xs-6">
                     <div class="nombre">
                         <i class="fa fa-user"></i>
@@ -299,7 +298,7 @@
                         <span class="white-text">Ligne de code</span>
                     </div>
                 </div>
-                            
+
                 <div class="col-sm-3 col-xs-6">
                     <div class="nombre">
                         <i class="fa fa-file"></i>
@@ -307,7 +306,7 @@
                         <span class="white-text">Projects completed</span>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>

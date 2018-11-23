@@ -1,5 +1,5 @@
-@extends('header')
-@section('title','Services')
+@extends('header',['title'=>'Services'])
+
 
 @section('content')
 

@@ -1,5 +1,4 @@
-@extends('header')
-@section('title','Accueil')
+@extends('header', ['title'=>'Home'])
 
 @section('content')
 
