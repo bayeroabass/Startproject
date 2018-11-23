@@ -45,11 +45,11 @@
 
                             <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
                                 <ul class="navbar-nav animated" id="nav">
-                                    <li class="nav-item active"><a class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">A Propos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Nos Services</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href={{ Route('contact') }}>Contact</a></li>
+                                    <li class="nav-item {{ set_active_route('accueil') }}"><a class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
+                                    <li class="nav-item {{ set_active_route('about') }}"><a class="nav-link" href="{{ route('about') }}">A Propos</a></li>
+                                    <li class="nav-item {{ set_active_route('services') }}"><a class="nav-link" href="{{ route('services') }}">Nos Services</a></li>
+                                    <li class="nav-item {{ set_active_route('portfolio') }}"><a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a></li>
+                                    <li class="nav-item {{ set_active_route('contact') }}"><a class="nav-link" href={{ Route('contact') }}>Contact</a></li>
                                 </ul>
                                 <!-- Search Form Area Start -->
 
